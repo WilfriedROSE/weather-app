@@ -1,8 +1,8 @@
 .wrapper {
-  max-width: 260px;
+  max-width: 260;
   text-align: center;
 }
 
 .message {
-  margin-bottom: 30px;
+  margin-bottom: 30;
 }

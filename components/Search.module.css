@@ -1,15 +1,15 @@
 .search {
-  height: 40px;
-  font-size: 18px;
+  height: 40;
+  font-size: 18;
   font-family: "Varela Round", sans-serif;
   color: #303030;
   text-align: right;
-  padding: 0 10px;
+  padding: 0 10;
   border: none;
-  border-radius: 10px;
+  border-radius: 10;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 520) {
   .search {
     width: 100%;
     text-align: center;

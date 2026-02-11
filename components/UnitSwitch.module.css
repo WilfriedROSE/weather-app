@@ -4,7 +4,7 @@
 
 .switch {
   display: inline;
-  margin: 0 10px;
+  margin: 0 10;
   cursor: pointer;
 }
 
@@ -16,19 +16,19 @@
   color: black;
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 475) {
   .wrapper {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (max-width: 335) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
   }
 
   .switch {
-    margin: 10px 0;
+    margin: 10 0;
   }
 }
