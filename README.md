@@ -23,33 +23,41 @@ Après la récupération du code, j'ai analysé l'organisation des fichiers, le 
 
 II - Création de mon dépôt personnel
 
-Afin de travailler sur ma propre versione et ma propre machine, j'ai créé un nouveau dépôt GitHub personnel.
+Afin de travailler sur ma propre version et ma propre machine, j'ai créé un nouveau dépôt GitHub personnel.
 J'ai supprimé la liaison avec le dépôt d'origine et configuré mon projet pour qu'il pointe vers mon propre dépôt.
 J'ai ensuite initialisé l'historique Git de mon projet et poussé le code vers mon dépôt.
-Le but était de :
-- Suivre les modifications du code
-- Sauvegarder les différentes étapes du développement
-- Travailler à partir d'un projet existant
-- Maintenir un historique clair des évolutions
-- Faciliter la livraison du projet via GitHub
+
 
 III - Migration vers l'API Open-Meteo
 
-L'application utilisait initialement OpenWeatherMap donc je l'ai remplacé par Open-Meteo. J'ai commencé par modifier la requête API, adapter le format des données reçues, maintenir la compabilité avec l'interface existance.
+L'application utilisait au départ OpenWeatherMap donc je l'ai remplacé par Open-Meteo.
+J'ai commencé par modifier la requête API puis adapter le format des données reçues.
+J'ai modifier l'API interne data pour transformer les données OpenMeteo au format demandé.
 
 IV - Création du fichier config.Json
 
 Pour ne plus utiliser la recherche de ville sur l'application, j'ai commencé par créer un fichier config.json en indiquant la ville, le pays et les coordonnées de la ville déjà prédéfinies. Le but était que l'application utilise ces coordonnées pour récupérer les données météo.
 
-V - Migration de OpenWeatherMap à Open-Meteo
-
-J'ai adapté plusieurs champs pour maintenir le fonctionnement de l'interface et construit la migration vers Open-Meteo.
 
 VI - Changement automatique des données
 
-Afin de respecter les contraintes du projet, les données météo sont mises à jour automatiquement toutes les heures.
-Cette fonctionnalité a été faite avec setInterval dans React.
+Etant donné que Open-Meteo ne fournit pas les mêmes données que OpenWeatherMap, j'ai adapté plusieurs champs pour maintenir le fonctionnement de l'interface.
+
+VII - Changement automatique des données
+
+Pour une mise à jour des données météo automatiquement toutes les heures, j'ai mis la fonctionnalité en utilisant setInterval dans React.
+
+VIII - Gestion du fuseau horaire
+
+Pour faire correspondre les horaires météo à la ville prédéfinies, utiliser l'offset UTC fourni qui m'a été fourni par Open-Meteo.
+Affichage de l'heure locale, le lever du soleil, du coucher du soleil.
+
+IX - Gestion du mode jour / nuit
+
+Utiliser is-day venant de l'APU pour que l'interface s'adapte automatiquement.
 
 
 
+
+i
 
