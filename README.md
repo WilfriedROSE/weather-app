@@ -1,5 +1,7 @@
 Weather App
 
+<img width="1020" height="599" alt="Capture d’écran 2026-02-11 à 03 24 21" src="https://github.com/user-attachments/assets/d8c4dfb1-84af-4a4a-bab2-c1a4ca573bb5" />
+
 
 CONTEXTE DU PROJET 
 Ce projet consiste à adapter une application météo existante afin d’utiliser l’API Open-Meteo à la place d’OpenWeatherMap.
@@ -55,9 +57,3 @@ Affichage de l'heure locale, le lever du soleil, du coucher du soleil.
 IX - Gestion du mode jour / nuit
 
 Utiliser is-day venant de l'APU pour que l'interface s'adapte automatiquement.
-
-
-
-
-i
-
